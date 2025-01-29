@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Zachary Fraedrich">
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+			<form>
+				<label for="fullName">Full Name<span class="required">*</span></label>
+				<input name="fullName" id="fullName" type="text" placeholder="First Name & Last Name" required autocomplete></input>
+
+				<label for="email">Email<span class="required">*</span></label>
+				<input name="email" id="email" type="email" placeholder="email@email.com" required autocomplete></input>
+
+				<label for="phone">Phone<span class="required">*</span></label>
+				<input name="phone"id="phone" type="tel" placeholder="(555)123-4567" required autocomplete></input>
+
+				<fieldset>
+					<legend>Preferred Contact Method<span class="required">*</span></legend>
+					<input name="preferredContact" id="preferredContactPhone" type="radio" required checked></input>
+					<label for="preferredContactPhone">Phone</label>
+								
+					<input name="preferredContact" id="preferredContactEmail" type="radio" required></input> 
+					<label for="preferredContactEmail">Email</label>
+				</fieldset>
+			</form>
+
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
